@@ -1,0 +1,567 @@
+execve("/usr/bin/pico", ["pico", "test.txt"], 0x7ffd3274dac8 /* 23 vars */) = 0
+brk(NULL)                               = 0x557eff392000
+access("/etc/ld.so.preload", R_OK)      = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/etc/ld.so.cache", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=95909, ...}) = 0
+mmap(NULL, 95909, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc1d3ef0000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libncursesw.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0p\242\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=235440, ...}) = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc1d3f3a000
+mmap(NULL, 238008, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc1d3eb0000
+mmap(0x7fc1d3eb9000, 159744, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x9000) = 0x7fc1d3eb9000
+mmap(0x7fc1d3ee0000, 36864, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x30000) = 0x7fc1d3ee0000
+mmap(0x7fc1d3ee9000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x38000) = 0x7fc1d3ee9000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libtinfo.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0\220\351\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=187792, ...}) = 0
+mmap(NULL, 190880, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc1d3e80000
+mmap(0x7fc1d3e8e000, 57344, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0xe000) = 0x7fc1d3e8e000
+mmap(0x7fc1d3e9c000, 57344, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1c000) = 0x7fc1d3e9c000
+mmap(0x7fc1d3eaa000, 20480, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x29000) = 0x7fc1d3eaa000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libc.so.6", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\3\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0@n\2\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0755, st_size=1839792, ...}) = 0
+mmap(NULL, 1852680, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc1d3cb8000
+mprotect(0x7fc1d3cdd000, 1662976, PROT_NONE) = 0
+mmap(0x7fc1d3cdd000, 1355776, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x25000) = 0x7fc1d3cdd000
+mmap(0x7fc1d3e28000, 303104, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x170000) = 0x7fc1d3e28000
+mmap(0x7fc1d3e73000, 24576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1ba000) = 0x7fc1d3e73000
+mmap(0x7fc1d3e79000, 13576, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0x7fc1d3e79000
+close(3)                                = 0
+openat(AT_FDCWD, "/lib/x86_64-linux-gnu/libdl.so.2", O_RDONLY|O_CLOEXEC) = 3
+read(3, "\177ELF\2\1\1\0\0\0\0\0\0\0\0\0\3\0>\0\1\0\0\0000\21\0\0\0\0\0\0"..., 832) = 832
+fstat(3, {st_mode=S_IFREG|0644, st_size=18688, ...}) = 0
+mmap(NULL, 20752, PROT_READ, MAP_PRIVATE|MAP_DENYWRITE, 3, 0) = 0x7fc1d3cb0000
+mmap(0x7fc1d3cb1000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x1000) = 0x7fc1d3cb1000
+mmap(0x7fc1d3cb3000, 4096, PROT_READ, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fc1d3cb3000
+mmap(0x7fc1d3cb4000, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_DENYWRITE, 3, 0x3000) = 0x7fc1d3cb4000
+close(3)                                = 0
+mmap(NULL, 8192, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x7fc1d3f38000
+arch_prctl(ARCH_SET_FS, 0x7fc1d3f39040) = 0
+mprotect(0x7fc1d3e73000, 12288, PROT_READ) = 0
+mprotect(0x7fc1d3cb4000, 4096, PROT_READ) = 0
+mprotect(0x7fc1d3eaa000, 16384, PROT_READ) = 0
+mprotect(0x7fc1d3ee9000, 4096, PROT_READ) = 0
+mprotect(0x557efeb07000, 4096, PROT_READ) = 0
+mprotect(0x7fc1d3f32000, 4096, PROT_READ) = 0
+munmap(0x7fc1d3ef0000, 95909)           = 0
+ioctl(1, VBG_IOCTL_VMMDEV_REQUEST_BIG or VT_GETSTATE, 0x7fff233e17da) = -1 ENOTTY (Inappropriate ioctl for device)
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+fcntl(0, F_GETFL)                       = 0x2 (flags O_RDWR)
+fcntl(0, F_SETFL, O_RDWR)               = 0
+brk(NULL)                               = 0x557eff392000
+brk(0x557eff3b3000)                     = 0x557eff3b3000
+openat(AT_FDCWD, "/usr/lib/locale/locale-archive", O_RDONLY|O_CLOEXEC) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=5954704, ...}) = 0
+mmap(NULL, 5954704, PROT_READ, MAP_PRIVATE, 3, 0) = 0x7fc1d3700000
+close(3)                                = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+stat("/home/ajankowi/.terminfo", 0x557eff393d00) = -1 ENOENT (No such file or directory)
+stat("/etc/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/lib/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+stat("/usr/share/terminfo", {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+access("/etc/terminfo/x/xterm-256color", R_OK) = -1 ENOENT (No such file or directory)
+access("/lib/terminfo/x/xterm-256color", R_OK) = 0
+openat(AT_FDCWD, "/lib/terminfo/x/xterm-256color", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=3790, ...}) = 0
+read(3, "\36\2%\0&\0\17\0\235\1\34\6xterm-256color|xterm"..., 32768) = 3790
+read(3, "", 28672)                      = 0
+close(3)                                = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TIOCGWINSZ, {ws_row=24, ws_col=80, ws_xpixel=0, ws_ypixel=0}) = 0
+brk(0x557eff3d4000)                     = 0x557eff3d4000
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig -icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig -icanon echo ...}) = 0
+ioctl(1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+rt_sigaction(SIGTSTP, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x7fc1d3ecdce0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGINT, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=0x7fc1d3ecdbf0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGTERM, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x7fc1d3ecdbf0, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, NULL, {sa_handler=SIG_DFL, sa_mask=[], sa_flags=0}, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x7fc1d3ecdbe0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+ioctl(1, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+access("/etc/nanorc", R_OK)             = 0
+stat("/etc/nanorc", {st_mode=S_IFREG|0644, st_size=10056, ...}) = 0
+openat(AT_FDCWD, "/etc/nanorc", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=10056, ...}) = 0
+read(3, "## Sample initialization file fo"..., 4096) = 4096
+read(3, "acters treated as closing punctu"..., 4096) = 4096
+openat(AT_FDCWD, "/usr/share/nano", O_RDONLY|O_NONBLOCK|O_CLOEXEC|O_DIRECTORY) = 4
+fstat(4, {st_mode=S_IFDIR|0755, st_size=4096, ...}) = 0
+getdents64(4, 0x557eff3c8c80 /* 44 entries */, 32768) = 1496
+openat(AT_FDCWD, "/usr/lib/x86_64-linux-gnu/gconv/gconv-modules.cache", O_RDONLY) = 5
+fstat(5, {st_mode=S_IFREG|0644, st_size=27002, ...}) = 0
+mmap(NULL, 27002, PROT_READ, MAP_SHARED, 5, 0) = 0x7fc1d3f00000
+close(5)                                = 0
+getdents64(4, 0x557eff3c8c80 /* 0 entries */, 32768) = 0
+close(4)                                = 0
+access("/usr/share/nano/asm.nanorc", R_OK) = 0
+stat("/usr/share/nano/asm.nanorc", {st_mode=S_IFREG|0644, st_size=687, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/asm.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=687, ...}) = 0
+read(4, "## Syntax highlighting for assem"..., 4096) = 687
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/autoconf.nanorc", R_OK) = 0
+stat("/usr/share/nano/autoconf.nanorc", {st_mode=S_IFREG|0644, st_size=638, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/autoconf.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=638, ...}) = 0
+read(4, "## Syntax highlighting for Autoc"..., 4096) = 638
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/awk.nanorc", R_OK) = 0
+stat("/usr/share/nano/awk.nanorc", {st_mode=S_IFREG|0644, st_size=1351, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/awk.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1351, ...}) = 0
+read(4, "## Syntax highlighting for AWK s"..., 4096) = 1351
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/changelog.nanorc", R_OK) = 0
+stat("/usr/share/nano/changelog.nanorc", {st_mode=S_IFREG|0644, st_size=800, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/changelog.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=800, ...}) = 0
+read(4, "## Syntax highlighting for Chang"..., 4096) = 800
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/cmake.nanorc", R_OK) = 0
+stat("/usr/share/nano/cmake.nanorc", {st_mode=S_IFREG|0644, st_size=788, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/cmake.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=788, ...}) = 0
+read(4, "## Syntax highlighting for CMake"..., 4096) = 788
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/c.nanorc", R_OK) = 0
+stat("/usr/share/nano/c.nanorc", {st_mode=S_IFREG|0644, st_size=2000, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/c.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=2000, ...}) = 0
+read(4, "## Syntax highlighting for C and"..., 4096) = 2000
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/css.nanorc", R_OK) = 0
+stat("/usr/share/nano/css.nanorc", {st_mode=S_IFREG|0644, st_size=505, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/css.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=505, ...}) = 0
+read(4, "## Syntax highlighting for CSS f"..., 4096) = 505
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/debian.nanorc", R_OK) = 0
+stat("/usr/share/nano/debian.nanorc", {st_mode=S_IFREG|0644, st_size=758, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/debian.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=758, ...}) = 0
+read(4, "## Syntax highlighting for apt's"..., 4096) = 758
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/default.nanorc", R_OK) = 0
+stat("/usr/share/nano/default.nanorc", {st_mode=S_IFREG|0644, st_size=546, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/default.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=546, ...}) = 0
+read(4, "## This is an example of a defau"..., 4096) = 546
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/elisp.nanorc", R_OK) = 0
+stat("/usr/share/nano/elisp.nanorc", {st_mode=S_IFREG|0644, st_size=1107, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/elisp.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1107, ...}) = 0
+read(4, "## Syntax highlighting for Emacs"..., 4096) = 1107
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/email.nanorc", R_OK) = 0
+stat("/usr/share/nano/email.nanorc", {st_mode=S_IFREG|0644, st_size=333, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/email.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=333, ...}) = 0
+read(4, "## Syntax highlighting for email"..., 4096) = 333
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/go.nanorc", R_OK) = 0
+stat("/usr/share/nano/go.nanorc", {st_mode=S_IFREG|0644, st_size=1380, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/go.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1380, ...}) = 0
+read(4, "## Syntax highlighting for Go.\n\n"..., 4096) = 1380
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/groff.nanorc", R_OK) = 0
+stat("/usr/share/nano/groff.nanorc", {st_mode=S_IFREG|0644, st_size=700, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/groff.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=700, ...}) = 0
+read(4, "## Syntax highlighting for groff"..., 4096) = 700
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/guile.nanorc", R_OK) = 0
+stat("/usr/share/nano/guile.nanorc", {st_mode=S_IFREG|0644, st_size=586, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/guile.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=586, ...}) = 0
+read(4, "## Syntax highlighting for Guile"..., 4096) = 586
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/haskell.nanorc", R_OK) = 0
+stat("/usr/share/nano/haskell.nanorc", {st_mode=S_IFREG|0644, st_size=1009, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/haskell.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1009, ...}) = 0
+read(4, "## Syntax highlighting for Haske"..., 4096) = 1009
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/html.nanorc", R_OK) = 0
+stat("/usr/share/nano/html.nanorc", {st_mode=S_IFREG|0644, st_size=1251, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/html.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1251, ...}) = 0
+read(4, "## Syntax highlighting for HTML."..., 4096) = 1251
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/java.nanorc", R_OK) = 0
+stat("/usr/share/nano/java.nanorc", {st_mode=S_IFREG|0644, st_size=654, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/java.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=654, ...}) = 0
+read(4, "## Syntax highlighting for Java."..., 4096) = 654
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/javascript.nanorc", R_OK) = 0
+stat("/usr/share/nano/javascript.nanorc", {st_mode=S_IFREG|0644, st_size=822, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/javascript.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=822, ...}) = 0
+read(4, "## Syntax highlighting for Javas"..., 4096) = 822
+brk(0x557eff3f5000)                     = 0x557eff3f5000
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/json.nanorc", R_OK) = 0
+stat("/usr/share/nano/json.nanorc", {st_mode=S_IFREG|0644, st_size=856, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/json.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=856, ...}) = 0
+read(4, "## Syntax highlighting for JSON "..., 4096) = 856
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/lua.nanorc", R_OK) = 0
+stat("/usr/share/nano/lua.nanorc", {st_mode=S_IFREG|0644, st_size=2450, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/lua.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=2450, ...}) = 0
+read(4, "## Syntax highlighting for Lua.\n"..., 4096) = 2450
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/makefile.nanorc", R_OK) = 0
+stat("/usr/share/nano/makefile.nanorc", {st_mode=S_IFREG|0644, st_size=536, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/makefile.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=536, ...}) = 0
+read(4, "## Syntax highlighting for Makef"..., 4096) = 536
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/man.nanorc", R_OK) = 0
+stat("/usr/share/nano/man.nanorc", {st_mode=S_IFREG|0644, st_size=727, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/man.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=727, ...}) = 0
+read(4, "## Syntax highlighting for man p"..., 4096) = 727
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/markdown.nanorc", R_OK) = 0
+stat("/usr/share/nano/markdown.nanorc", {st_mode=S_IFREG|0644, st_size=947, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/markdown.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=947, ...}) = 0
+read(4, "## Syntax highlighting for Markd"..., 4096) = 947
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/nanohelp.nanorc", R_OK) = 0
+stat("/usr/share/nano/nanohelp.nanorc", {st_mode=S_IFREG|0644, st_size=418, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/nanohelp.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=418, ...}) = 0
+read(4, "## This is meant for highlightin"..., 4096) = 418
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/nanorc.nanorc", R_OK) = 0
+stat("/usr/share/nano/nanorc.nanorc", {st_mode=S_IFREG|0644, st_size=3132, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/nanorc.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=3132, ...}) = 0
+read(4, "## Syntax highlighting for nanor"..., 4096) = 3132
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/nftables.nanorc", R_OK) = 0
+stat("/usr/share/nano/nftables.nanorc", {st_mode=S_IFREG|0644, st_size=926, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/nftables.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=926, ...}) = 0
+read(4, "## Syntax highlighting for the p"..., 4096) = 926
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/objc.nanorc", R_OK) = 0
+stat("/usr/share/nano/objc.nanorc", {st_mode=S_IFREG|0644, st_size=1505, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/objc.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1505, ...}) = 0
+read(4, "## Syntax highlighting for C/C++"..., 4096) = 1505
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/ocaml.nanorc", R_OK) = 0
+stat("/usr/share/nano/ocaml.nanorc", {st_mode=S_IFREG|0644, st_size=859, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/ocaml.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=859, ...}) = 0
+read(4, "## Syntax highlighting for OCaml"..., 4096) = 859
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/patch.nanorc", R_OK) = 0
+stat("/usr/share/nano/patch.nanorc", {st_mode=S_IFREG|0644, st_size=600, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/patch.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=600, ...}) = 0
+read(4, "## Syntax highlighting for patch"..., 4096) = 600
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/perl.nanorc", R_OK) = 0
+stat("/usr/share/nano/perl.nanorc", {st_mode=S_IFREG|0644, st_size=1704, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/perl.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1704, ...}) = 0
+read(4, "## Syntax highlighting for Perl."..., 4096) = 1704
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/php.nanorc", R_OK) = 0
+stat("/usr/share/nano/php.nanorc", {st_mode=S_IFREG|0644, st_size=1077, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/php.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1077, ...}) = 0
+read(4, "## Syntax highlighting for PHP.\n"..., 4096) = 1077
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/po.nanorc", R_OK) = 0
+stat("/usr/share/nano/po.nanorc", {st_mode=S_IFREG|0644, st_size=1120, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/po.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1120, ...}) = 0
+read(4, "## Syntax highlighting for PO fi"..., 4096) = 1120
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/python.nanorc", R_OK) = 0
+stat("/usr/share/nano/python.nanorc", {st_mode=S_IFREG|0644, st_size=1233, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/python.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1233, ...}) = 0
+read(4, "## Syntax highlighting for Pytho"..., 4096) = 1233
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/ruby.nanorc", R_OK) = 0
+stat("/usr/share/nano/ruby.nanorc", {st_mode=S_IFREG|0644, st_size=1521, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/ruby.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1521, ...}) = 0
+read(4, "## Syntax highlighting for Ruby."..., 4096) = 1521
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/rust.nanorc", R_OK) = 0
+stat("/usr/share/nano/rust.nanorc", {st_mode=S_IFREG|0644, st_size=1023, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/rust.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1023, ...}) = 0
+read(4, "## Syntax highlighting for Rust."..., 4096) = 1023
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/sh.nanorc", R_OK) = 0
+stat("/usr/share/nano/sh.nanorc", {st_mode=S_IFREG|0644, st_size=1531, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/sh.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1531, ...}) = 0
+read(4, "## Syntax highlighting for Bourn"..., 4096) = 1531
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/sql.nanorc", R_OK) = 0
+stat("/usr/share/nano/sql.nanorc", {st_mode=S_IFREG|0644, st_size=2919, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/sql.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=2919, ...}) = 0
+read(4, "## Syntax highlighting for (Post"..., 4096) = 2919
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/tcl.nanorc", R_OK) = 0
+stat("/usr/share/nano/tcl.nanorc", {st_mode=S_IFREG|0644, st_size=1996, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/tcl.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=1996, ...}) = 0
+read(4, "## Syntax highlighting for Tcl f"..., 4096) = 1996
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/texinfo.nanorc", R_OK) = 0
+stat("/usr/share/nano/texinfo.nanorc", {st_mode=S_IFREG|0644, st_size=540, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/texinfo.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=540, ...}) = 0
+read(4, "## Syntax highlighting for Texin"..., 4096) = 540
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/tex.nanorc", R_OK) = 0
+stat("/usr/share/nano/tex.nanorc", {st_mode=S_IFREG|0644, st_size=199, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/tex.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=199, ...}) = 0
+read(4, "## Syntax highlighting for TeX f"..., 4096) = 199
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+access("/usr/share/nano/xml.nanorc", R_OK) = 0
+stat("/usr/share/nano/xml.nanorc", {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/xml.nanorc", O_RDONLY) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=526, ...}) = 0
+read(4, "## Syntax highlighting for XML f"..., 4096) = 526
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+read(3, "c\"\n# include \"/usr/share/nano/sh"..., 4096) = 1864
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+geteuid()                               = 15771
+access("/home/ajankowi/.nanorc", R_OK)  = -1 ENOENT (No such file or directory)
+access("/home/ajankowi/.config/nano/nanorc", R_OK) = -1 ENOENT (No such file or directory)
+stat("/home/ajankowi/.nano/", 0x7fff233e16e0) = -1 ENOENT (No such file or directory)
+stat("/home/ajankowi/.local/share/nano/", {st_mode=S_IFDIR|0700, st_size=0, ...}) = 0
+openat(AT_FDCWD, "/home/ajankowi/.local/share/nano/search_history", O_RDONLY) = -1 ENOENT (No such file or directory)
+ioctl(1, TCGETS, {B38400 opost isig -icanon -echo ...}) = 0
+ioctl(1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost -isig -icanon -echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost -isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_START or TCSETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_START or TCSETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+fstat(1, {st_mode=S_IFCHR|0620, st_rdev=makedev(0x88, 0x1a), ...}) = 0
+write(1, "\33[?2004h", 8)               = 8
+write(1, "\33[?1049h\33[22;0;0t\33[1;24r\33(B\33[m\33["..., 54) = 54
+write(1, "\33[?1h\33=", 7)              = 7
+write(1, "\33[?25l", 6)                 = 6
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGQUIT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGHUP, {sa_handler=0x557efeacebc0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGTERM, {sa_handler=0x557efeacebc0, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGWINCH, {sa_handler=0x557efeace270, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=0x557efeace2d0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGCONT, {sa_handler=0x557efeace280, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGSEGV, {sa_handler=0x557efeacebf0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESETHAND, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGABRT, {sa_handler=0x557efeacebf0, sa_mask=~[RTMIN RT_1], sa_flags=SA_RESTORER|SA_RESETHAND, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+stat("test.txt", {st_mode=S_IFREG|0755, st_size=15, ...}) = 0
+stat(".", {st_mode=S_IFDIR|0755, st_size=74, ...}) = 0
+access(".", X_OK)                       = 0
+access(".", W_OK)                       = 0
+stat("./.test.txt.swp", 0x7fff233e15d0) = -1 ENOENT (No such file or directory)
+getpid()                                = 3596011
+geteuid()                               = 15771
+socket(AF_UNIX, SOCK_STREAM|SOCK_CLOEXEC|SOCK_NONBLOCK, 0) = 3
+connect(3, {sa_family=AF_UNIX, sun_path="/var/run/nscd/socket"}, 110) = 0
+sendto(3, "\2\0\0\0\v\0\0\0\7\0\0\0passwd\0", 19, MSG_NOSIGNAL, NULL, 0) = 19
+poll([{fd=3, events=POLLIN|POLLERR|POLLHUP}], 1, 5000) = 1 ([{fd=3, revents=POLLIN|POLLHUP}])
+recvmsg(3, {msg_name=NULL, msg_namelen=0, msg_iov=[{iov_base="passwd\0", iov_len=7}, {iov_base="\310O\3\0\0\0\0\0", iov_len=8}], msg_iovlen=2, msg_control=[{cmsg_len=20, cmsg_level=SOL_SOCKET, cmsg_type=SCM_RIGHTS, cmsg_data=[4]}], msg_controllen=20, msg_flags=MSG_CMSG_CLOEXEC}, MSG_CMSG_CLOEXEC) = 15
+mmap(NULL, 217032, PROT_READ, MAP_SHARED, 4, 0) = 0x7fc1d36c8000
+close(4)                                = 0
+close(3)                                = 0
+uname({sysname="Linux", nodename="panamint", ...}) = 0
+unlink("./.test.txt.swp")               = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "./.test.txt.swp", O_WRONLY|O_CREAT|O_EXCL, 0666) = 3
+fcntl(3, F_GETFL)                       = 0x8001 (flags O_WRONLY|O_LARGEFILE)
+fstat(3, {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+write(3, "b0nano 5.4\0\0\0\0\0\0\0\0\0\0\0\0\0\0\353\3366\0ajan"..., 1024) = 1024
+close(3)                                = 0
+getcwd("/home/ajankowi/Sem5/SCR_2/Lab5/1", 4097) = 33
+stat("test.txt", {st_mode=S_IFREG|0755, st_size=15, ...}) = 0
+stat("/home/ajankowi/Sem5/SCR_2/Lab5/1/test.txt", {st_mode=S_IFREG|0755, st_size=15, ...}) = 0
+stat("/home/ajankowi/Sem5/SCR_2/Lab5/1/test.txt", {st_mode=S_IFREG|0755, st_size=15, ...}) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], NULL, 8) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_START or TCSETS, {B38400 -opost isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost isig -icanon -echo ...}) = 0
+rt_sigaction(SIGINT, {sa_handler=0x557efeace260, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, 8) = 0
+openat(AT_FDCWD, "/home/ajankowi/Sem5/SCR_2/Lab5/1/test.txt", O_RDONLY) = 3
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+ioctl(0, TCGETS, {B38400 -opost isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_START or TCSETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], NULL, 8) = 0
+fcntl(3, F_GETFL)                       = 0x8000 (flags O_RDONLY|O_LARGEFILE)
+openat(AT_FDCWD, "/usr/share/locale/locale.alias", O_RDONLY|O_CLOEXEC) = 4
+fstat(4, {st_mode=S_IFREG|0644, st_size=2996, ...}) = 0
+read(4, "# Locale name alias data base.\n#"..., 4096) = 2996
+read(4, "", 4096)                       = 0
+close(4)                                = 0
+openat(AT_FDCWD, "/usr/share/locale/en_US/LC_MESSAGES/nano.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+openat(AT_FDCWD, "/usr/share/locale/en/LC_MESSAGES/nano.mo", O_RDONLY) = -1 ENOENT (No such file or directory)
+rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc1d3cf3d60}, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, 8) = 0
+write(1, "\33[39;49m\33(B\33[m\33[H\33[2J\33[22;34H", 29) = 29
+write(1, "\33(B\33[0;7m[ Reading... ]", 23) = 23
+write(1, "\33(B\33[m", 6)               = 6
+rt_sigaction(SIGTSTP, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_START or TCSETS, {B38400 -opost isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost isig -icanon -echo ...}) = 0
+rt_sigaction(SIGINT, {sa_handler=0x557efeace260, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, 8) = 0
+rt_sigprocmask(SIG_BLOCK, [WINCH], NULL, 8) = 0
+fstat(3, {st_mode=S_IFREG|0755, st_size=15, ...}) = 0
+read(3, "To jest test!\n\n", 8192)      = 15
+read(3, "", 8192)                       = 0
+rt_sigprocmask(SIG_UNBLOCK, [WINCH], NULL, 8) = 0
+close(3)                                = 0
+access("test.txt", W_OK)                = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc1d3cf3d60}, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[22;33H", 8)               = 8
+write(1, "\33(B\33[0;7m[ Read 2 line", 22) = 22
+write(1, "s ]", 3)                      = 3
+write(1, "\33(B\33[m", 6)               = 6
+rt_sigaction(SIGTSTP, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGINT, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+ioctl(0, TCGETS, {B38400 -opost isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost isig -icanon -echo ...}) = 0
+ioctl(0, SNDCTL_TMR_START or TCSETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(0, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+stat("test.txt", {st_mode=S_IFREG|0755, st_size=15, ...}) = 0
+getcwd("/home/ajankowi/Sem5/SCR_2/Lab5/1", 4097) = 33
+stat("test.txt", {st_mode=S_IFREG|0755, st_size=15, ...}) = 0
+brk(0x557eff416000)                     = 0x557eff416000
+access("/usr/share/nano/default.nanorc", R_OK) = 0
+stat("/usr/share/nano/default.nanorc", {st_mode=S_IFREG|0644, st_size=546, ...}) = 0
+openat(AT_FDCWD, "/usr/share/nano/default.nanorc", O_RDONLY) = 3
+fstat(3, {st_mode=S_IFREG|0644, st_size=546, ...}) = 0
+read(3, "## This is an example of a defau"..., 4096) = 546
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc1d3cf3d60}, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[H", 3)                    = 3
+write(1, "\33(B\33[0;7m  GNU nano 5.4         "..., 96) = 96
+write(1, "\33(B\33[m", 6)               = 6
+rt_sigaction(SIGTSTP, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc1d3cf3d60}, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\r\33[23d", 6)                = 6
+write(1, "\33(B\33[0;7m^G\33(B\33[m Help\33[14G", 27) = 27
+write(1, "\33(B\33[0;7m^O\33(B\33[m Write Out \33(B\33"..., 82) = 82
+write(1, "\33(B\33[0;7m^T\33(B\33[m Execute   \33(B\33"..., 60) = 60
+write(1, "\33(B\33[0;7m^X\33(B\33[m Exit\33[14G", 27) = 27
+write(1, "\33(B\33[0;7m^R\33(B\33[m Read File \33(B\33"..., 140) = 140
+rt_sigaction(SIGTSTP, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc1d3cf3d60}, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\r\33[2d", 5)                 = 5
+write(1, "To jest test!\r", 14)         = 14
+rt_sigaction(SIGTSTP, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+write(1, "\33[?12l\33[?25h", 12)        = 12
+read(0, "\30", 1)                       = 1
+write(1, "\33[?25l", 6)                 = 6
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+unlink("./.test.txt.swp")               = 0
+rt_sigaction(SIGTSTP, {sa_handler=SIG_IGN, sa_mask=[], sa_flags=SA_RESTORER|SA_RESTART, sa_restorer=0x7fc1d3cf3d60}, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, 8) = 0
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[22d", 5)                  = 5
+poll([{fd=0, events=POLLIN}], 1, 0)     = 0 (Timeout)
+write(1, "\33[J\33[24d", 8)             = 8
+rt_sigaction(SIGTSTP, {sa_handler=0x557efeace2d0, sa_mask=~[KILL STOP RTMIN RT_1], sa_flags=SA_RESTORER, sa_restorer=0x7fc1d3cf3d60}, NULL, 8) = 0
+write(1, "\33[?12l\33[?25h", 12)        = 12
+write(1, "\33[24;1H\33[?1049l\33[23;0;0t\r\33[?1l\33>", 32) = 32
+ioctl(1, TCGETS, {B38400 -opost -isig -icanon -echo ...}) = 0
+ioctl(1, SNDCTL_TMR_STOP or TCSETSW, {B38400 opost isig icanon echo ...}) = 0
+ioctl(1, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+write(1, "\33[?2004l", 8)               = 8
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, SNDCTL_TMR_START or TCSETS, {B38400 opost isig icanon echo ...}) = 0
+ioctl(0, TCGETS, {B38400 opost isig icanon echo ...}) = 0
+exit_group(0)                           = ?
++++ exited with 0 +++

@@ -1,0 +1,28 @@
+#!/bin/bash
+
+while geotopts "n:m:a" OPTION
+do
+    case $OPTION in
+	n) n=$OPTARG;;
+        m) mask=$OPTARG;;
+	a) nazwatar=$OPTARG;;
+	*) echo "Usage: $0 -n timesincemodification -m mask -a archname"; exit 1;;
+    esac
+done
+
+if test -z "$n" ; then
+    echo "Brakuje licza dni do modyfikacji. Podaj liczbe dni np(2137)"
+    read n
+fi
+
+if test -z "$mask" ; then
+    echo "Brakuje maski. Podaj np *.pdf"
+    read mask
+fi
+
+if test -z "$nazwatar" ; then
+    echo "Podaj nazwe wariacie"
+    read nazwatar
+fi
+
+tar -cjf $nazwarat `find . -type f -name "$maska" -mtime -$n `

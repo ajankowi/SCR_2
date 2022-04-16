@@ -1,0 +1,113 @@
+1.Nanosleep                                      GOTOWE
+
+top -d ss.n
+delay time
+
+np.  top -d 00.1
+
+
+
+
+
+
+2.SIGNAL                                         DOKOŃCZ
+
+
+
+
+
+
+******DOKŃCZ*******
+
+C - przechwytywanie sygnału!
+
+
+
+
+
+
+
+
+
+
+
+
+kill -s SIGALRM PID - wyśiwtla komunikat i zakańcza pracę programu  
+kill -s SIGTERM PID - wyświetla komunikat i powraca do wykonywania programu
+kill -s SIGUSR1 PID - Wstrzymuje odbieranie sygnału na daną ilość iteracji w pętli
+kill -s SIGUSR2 PID - Ignoruje sygnał
+
+Istnieje możliwość stworzenia systemu, który odczytuje wysłane sygnały do programu i w odpowiedni sposób reaguje wysyłając dany komunikat, zakańczając pracę programu, wstrzymanie odbierania sygnału i ignorowanie sygnału.
+
+
+
+
+
+
+3. Proc Solaris                                 GOTOWE
+ https://docs.oracle.com/cd/E37838_01/html/E60997/spprocess-48.html
+
+Proc - jest to system plików i interfejsem dla struktór danych. 
+
+pcred [PID] - wyświetla informacje
+
+pfiles [PID] - wyświetla informacje o otwartych plikach w procesie
+
+pmap - wyświetla mapę adresów danego prcesu
+
+Proc linux
+Można wykorzystać ls
+np. ls - ltr /proc/[PID]
+
+
+
+
+4.psig - DIABLO                           GOTOWE                
+
+Pokazane jest jak dany program reaguje na zadanie danego sygnału
+
+
+
+
+
+5.strace -p [PID] -fe trace=execve ??       CHYBA
+cd /proc
+pfiles -DIABLO
+
+
+
+
+6. Polecenie Strace                         GOTOWE
+
+strace - polecenie do śledzenia wywołań systemowych i sygnałów. Umożliwiwa podgląd i analizę poleceń systemowych wydanych przez wskazany proces. Istnieje możliwość wywołania danego polecenia strace-em lub podłączenia się już do działąjącego procesu.
+
+
+Najważniejsze opcje:
+
+-e trace=[polecenie\nia systemowe] [program]
+Wyświetla logi tylko jednego lub kilku wymienionych poleceniń systemowych.
+
+-e signal=[nazwa sygnału] [program]
+
+-o [nazwa pliku]
+Zapisuje logi do pliku o danej nazwie
+
+-p [PID]
+Połączenie się z istaniejącym procesem
+
+-f [polecenie]
+Wyświetla logi procesów potomnych
+
+-fe trace=execve [program]
+Wyświetla jakie inne programy otwierają proces
+
+-t [program]
+Wyświetla timestepy logów
+
+
+
+
+
+7. 
+
+

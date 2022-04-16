@@ -1,0 +1,11 @@
+Adam Jankowiak
+252919
+
+Skrypt 1.
+Wymusza lokalizację kanoniczną, następnie zmienna dzien przyjmuje wartość danego  dnia zwracaną przez date +%u - np. poniedzilek przyjmuje wartosc 1, wtorek przyjmuje wartosc 2 itd. Kolejnum etapem jest sprawdzenie za pomocą if-a czy wartosc dzien jest wieksza niz 5 (-gt 5). Jezeli wartosc jest wieksza od 5 - czyli jest sobota lub niedziela zostaje wyswietlony napis "Weekend" natomiast jezeli dzien przyjmuje wartosc 1-5 to wyswietla sie komunikat "Witaj w pracy"
+
+Skrypt 2.
+Za pomocą pętli for wczytywane są adersy e-mail z pliku adresy.txt, następnie dzięki mutt ustawiany jest dany temat wiadomości, wybierany jest odpowiedni adres, załącza się plik pdf oraz dodawana jest treść wiadomości z pliku tresc.txt
+
+Skrypt 3.
+Uruchamiając skrypt należy podać 3 argumenty - nazwe archiwum liczbe dni oraz maske np../3.sh archiwum.tar 4 "*.pdf". Początkowo skrypt wczytuje podane parametry, następnie przypisuje wartość parametrów do danych zmiennych. Następnie zostaje stworzone archiwum o zadanej nazwie z wywołaniem programu find dzięki któremu zostają wyszukane pliki o danej masce lub rozszerzenu, które były modyfikowane w przeciągu N dni.

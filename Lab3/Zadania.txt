@@ -1,0 +1,157 @@
+1. Program PS
+
+ps -f - W pełnej formie wyświetla aktywne procesy użytkownika.
+ps -l   Wyświetla aktywne procesy w długim formacie BSD.
+
+-u Sortuje procesy w zależności od listy użytkowników. 
+-t Sortuje procesy w zależności od tty.
+-p Sortuje procesy w zależności od PID.
+
+ps -u 
+Podczas wywołania ps istniały 5 ajankowi procesy.
+pgrep -u root sshd
+W chwili wykonania ćwiczenia istniało 2096732 procesów sshd.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Osierocanie
+
+Uruchomienie hierarchi 3 procesów - zostały uruchomione trzy skrypty, które
+wywołują się po koleji. Po wpisaniu komendy ps -al można zauważyć, że skrypty są
+dziedziczne. Następnie środkowy proces zostaje zabity za pomocą komendy kill -d
+i ponownie wywoływany program ps -al. Tym razem można zauważyć, że proces B
+przestał istnieć oraz proces C przyjął wartość PPID 1, czyli został adoptowany 
+przez proces Init.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3.Potoki
+
+Po uruchomieniu potoku 3 skryptów działających przez pewien czas można zauważyć, że mają ten sam numer UID, PPID oraz TTY co świadczy o tym, że rodzicem każdego z tych procesów jest terminal.
+
+
+np. who | tee save | wc -l | ./3.3.sh
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4.FIFO
+
+System rozdziela dane z pliku procesom o współdzielonym dostępie w sposób losowy. Po zamknięciu potoku proces read zwraca SIGPIPE a proces write zwraca 0. W momecnie uruchomiania procesu read lub write bez uruchomienia procesu z drugiej strony można zauważyć, że proces write będzie zapisywał do potoku natomiast proces read będzie oczekiwał. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5.  KILL
+
+Po wysłaniu do procesu sygnału kill (SIGFPE, SIGILL) dany proces zostaje zabity. Dodając do sykryptu trap-a, można zauważyć, że sygnały, które wcześniej zabijały proces tym razem są przechwytywane. Jednakże po wysłaniu do procesu sygnału SIGKILL dany proces zostaje zabity.  
+
+
+
+
+
+
+
+7. NICE
+
+Wartość priotytetów niektórych procesów ma wartość 20 oraz wartość nice 0. Polecenie nice umożliwia uruchomienie danego procesu z danym piorytetem. Istneije jedynie możliwość zwiększenia wartości nice co zmniejsza piorytet wykonania danego procesu. Nie można zmniejszyć liczby nice co przyspieszyło by wykonanie procesu. Polecenie renice umożliwiwa zmianę już istniejącego procesu.
+Dla przykładu została wywołana komenda "nice -n 10 ./7-1.sh & ./7-2.sh &". W tym przypadku jako pierwszy został wykonany skrypy 7-2.sh.
+
+
+
+
+8. Ulimit
+
+Maksymalna ilość procesów dla każdego użytkownika na panamincie wynosi 500 procesów. Za pomocą komendy ulimit 200 została ustalona maksymalna ilość procesów na 200. Po uruchomieniu skryptu uruchamiającego samego siebie w pętli dochodzimy do limitu procesów w którym fork nie chce już uruchamiać kolejnych procesów. W takiej sytuacji wystarczy zabić główny proces.
+
+
+

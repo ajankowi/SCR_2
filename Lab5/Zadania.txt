@@ -1,0 +1,121 @@
+1.a)Polecenie Strace                                 GOTOWE
+
+strace - polecenie do śledzenia wywołań systemowych i sygnałów. Umożliwiwa podgląd i analizę poleceń systemowych wydanych przez wskazany proces. Istnieje możliwość wywołania danego polecenia strace-em lub podłączenia się już do działąjącego procesu.
+
+
+Najważniejsze opcje:
+
+-e trace=[polecenie\nia systemowe] [program]
+Wyświetla logi tylko jednego lub kilku wymienionych poleceniń systemowych.
+
+-e signal=[nazwa sygnału] [program]
+
+-o [nazwa pliku]
+Zapisuje logi do pliku o danej nazwie
+
+-p [PID]
+Połączenie się z istaniejącym procesem
+
+-f [polecenie]
+Wyświetla logi procesów potomnych
+
+-fe trace=execve [program]
+Wyświetla jakie inne programy otwierają proces
+
+-t [program]
+Wyświetla timestepy logów
+
+
+
+
+b) Strace Halo                                      GOTOWE
+
+strace ./b
+W celu wyświetlenia komunikatu została wykorzystana funkcja write().
+
+
+c) Deskryptory                                      GOTOWE
+
+strace -e trace=openat,close ./b
+strace -e trace=1,2,3 ./b
+
+Wyświetla 4 deskryptory
+    strace -n ./b - wyświetla numer    panamint
+    strace -c ./b - wyświetla czas
+
+
+
+d)Getenv                                            GOTOWE
+
+strace ./d
+Wyświetla się napis "Witaj ajankowi \n"
+
+
+ltrace - nie można uruchomić programu na panaminice.
+Na inyo:
+Wyświetla wykorzystane funkcje w programie oraz wyświetla
+zwróconą wartość.
+
+ltrace -x getenv@libc.so.* ./d
+
+ltrace -x FUNKCJA(nie musi być)@libc.so.*
+
+
+e) Pliki konfiguracyjne                                 GOTOWE
+
+strace bash 2> e.txt
+cat e.txt | grep openat | grep -v lib | grep -v dev
+
+f) NANO                                              !! GOTOWE !!
+
+strace nano test.txt 2> f.txt
+cat f.txt | egrep "open|close"
+
+Jak można zauważyć każde otwarcie pliku kończy się jego zamknięciem.
+Wynika z tego, że plik nie jest stale otwarty.
+
+
+
+
+
+                                                        GOTOWE
+g) Program został zabity przez sygnał SIGSEGV, który oznacza naruszenie ochrony pamięci.
+
+strace -e trace=signal ./g
+
+h)Pomiar czasu                                       !! GOTOWE !!
+
+strace -t xclock 2> h.txt
+cat h.txt
+
+Wyświetla się nam dokładny zapis z długością trwania danych wywołań.
+Można zauważyć, że wywołanie funkcji poll trwa aż 27 sekund.
+
+
+
+
+2.a) truss wyświetlanie komunikatu                      GOTOWE
+truss ./a
+W celu wyświetlenia napisu została wywyołana funkcja write
+
+
+b) bash                                                 GOTOWE
+
+truss bash 2> b.txt
+cat b.txt | grep open | grep config
+
+
+c)Zliczanie ilości printf w ls                          GOTOWE
+
+truss -u libc:printf ls 2> c.txt
+cat c.txt | grep printf | wc -l
+
+d)PICO                                                 !! GOTOWE !!
+
+truss pico test.txt 2> d.txt
+cat d.txt | egrep "open|close"
+
+Jak można zauważyć każde otwarcie pliku kończy się jego zamknięciem.
+Wynika z tego, że plik nie jest stale otwarty.
+
+

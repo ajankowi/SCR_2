@@ -1,0 +1,24 @@
+1.  Potok - tekst                                   GOTOWE
+gcc -o 1 1.c
+./1
+test.txt
+
+
+2.  Potok - obrazek                                 GOTOWE
+gcc -o 2 2.c
+./2
+Yamaha.png
+
+
+
+3.  FIFO                                            GOTOWE
+gcc -o 3-serwer 3-serwer.c 
+gcc -o 3-klient 3-klient.c
+
+Należy w osobnych terminalach uruchomić program 3-serwer i 3-klient.
+
+3-serwer
+Zostaje stworzony nowy potok za pomocą funkcji mkfifo(). Następnie sprawdzane jest poprawne otwieranie potoku. Po otworzeniu potoku można zacząć podawać nazwy plików. Sprawdzana jest poprawność otwierania się poanych plików i następnie zawartość plików jest czytana do bufora. Po tej operacji zachodzi zapisywanie bufora do potoku. Po zamknięciu czytania nowych plików dochodzi do zamknięcia potoku.
+
+3-klient
+Zostaje utworzony potok za pomocą funcki mkfifo(). Następnie sprawdzana jest poprawność otwarcia potoku. Pętla while działa tak długo aż nie będzie miała nowych plików do czytania z potoku. Dodatkowo pliki z potoku są czytane do bufora po czym są wyświetlane.Po zakończeniu się plików do odczytu z potoku dochodzi do zamknięcia potoku.

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+x=1;
+
+while [ $x ] ; do
+
+cat tekst.txt
+
+#sleep 2
+
+done

@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "Uruchomienie skryptu"
+
+mkdir NowyKatalog
+
+touch NowyPlik
+
+chmod 777 NowyKatalog
+
+rm NowyPlik
+
+echo "dziala $1"
+
